@@ -1,0 +1,18 @@
+<div class="page-header">
+  <h1>Todos los Usuarios</h1>
+</div>
+
+<%= link_to "Crear nuevo usuario", , class: "btn btn-default navbar-btn" %>
+
+<% @users.each do |user| %>
+  <div class="">
+    
+    <strong><%= user.full_name %> </strong>
+        
+    <div class="meta">
+      <%= link_to time_ago_in_words(user.created_at) + " ago", user %>|
+    
+
+    </div>
+  </div>
+<% end %>

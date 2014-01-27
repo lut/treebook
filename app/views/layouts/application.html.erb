@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Treebook</title>
+  <title>Monedero</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -15,8 +15,9 @@
 			      <span class="sr-only">Toggle navigation</span>
 			      
 			    </button>
-			    <a class="navbar-brand" href="#">Treebook</a>
-			    <p class="navbar-text navbar-right"><%= link_to "All Statuses", statuses_path %></p>
+			    <a class="navbar-brand" href="#">Monedero</a>
+			    <p class="navbar-text navbar-right"><%= link_to "Comercios", merchants_path %></p>
+			    <p class="navbar-text navbar-right"><%= link_to "Usuarios", users_path %></p>
 
 			    
 

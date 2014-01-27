@@ -1,4 +1,7 @@
 Treebook::Application.routes.draw do
+  resources :merchants
+
+
   devise_for :users
 
   resources :statuses
