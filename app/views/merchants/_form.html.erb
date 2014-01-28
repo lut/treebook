@@ -1,6 +1,10 @@
 <%= simple_form_for(@merchant) do |f| %>
   <%= f.error_notification %>
   <%= f.input :name %>
+  <%= f.input :geolat2%>
+  <%= f.input :geolon2%>
+
+
 
   <div class="form-actions">
     <%= f.button :submit %>
