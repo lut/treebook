@@ -1,10 +1,5 @@
 Treebook::Application.routes.draw do
   resources :credits
-  resources :users
-
-
-  resources :merchants
-
 
   devise_for :users
 

@@ -16,8 +16,7 @@
 			    </button>
 
 			    <a class="navbar-brand" href="#">Monedero</a>
-			    <p class="navbar-text navbar-right"><%= link_to "Creditos", credits_path %></p>
-			    <p class="navbar-text navbar-right"><%= link_to "Comercios", merchants_path %></p>
+			    <p class="navbar-text navbar-right"><%= link_to "Statuses", statuses_path %></p>
 			   
 			</div>
 			<div class = "navbar-header pull-right">
@@ -43,8 +42,14 @@
 
 
 	<div class="container">
-		<p class="notice"><%= notice %></p>
-    	<p class="alert"><%= alert %></p>
+		<% flash.each do |type, message| %>
+			<div class="alert <%= flash_class type %>" >
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<%= message %>
+			</div>
+
+		<% end %>
+
 		<%= yield %>
 	</div>
 </body>
