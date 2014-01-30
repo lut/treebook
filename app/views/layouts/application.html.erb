@@ -24,11 +24,11 @@
 				<% if user_signed_in? %> 
 				
 			    	<p><%= link_to current_user.full_name, edit_user_registration_path %></p>
-			    	<p><%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %></p>
+			    	<p><%= link_to "Cerrar Sesion", logout_path %></p>
 
 				<% else %>
-					<p class="navbar-text"><%= link_to "Registrarte", new_user_registration_path %></p>
-					<p class="navbar-text"><%= link_to "Iniciar Sesion", new_user_session_path %></p>
+					<p class="navbar-text"><%= link_to "Registrarte", register_path %></p>
+					<p class="navbar-text"><%= link_to "Iniciar Sesion", login_path %></p>
 				<% end %>
 			</div>
 		</div>
