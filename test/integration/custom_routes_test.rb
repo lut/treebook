@@ -18,4 +18,9 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
 		assert_response :success
 	end
 
+	test "that a profile page route works" do
+		get '/lut'
+		assert_response :success
+	end
+
 end
